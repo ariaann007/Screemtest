@@ -7,37 +7,37 @@ import { cn } from "@/lib/utils";
 import { useApp } from "@/context/AppContext";
 
 const clientNav = [
-  { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Dashboard", href: "/", icon: LayoutDashboard, subItems: undefined },
   { label: "Organisation", href: "/organisation", icon: Building2, subItems: [
     { label: "Organisation Profile", href: "/organisation/profile" },
     { label: "Legal Entities", href: "/organisation/legal-entities" },
     { label: "Group Structure", href: "/organisation/group-structure" },
     { label: "Sites & Branches", href: "/organisation/sites" },
   ]},
-  { label: "Sponsorship", href: "/sponsorship", icon: Award },
-  { label: "People", href: "/people", icon: Users },
-  { label: "Recruitment", href: "/recruitment", icon: UserPlus },
-  { label: "Requests", href: "/requests", icon: InboxIcon },
-  { label: "Leave", href: "/leave", icon: CalendarDays },
-  { label: "Attendance", href: "/attendance", icon: Clock },
-  { label: "Settings", href: "/settings", icon: Settings },
+  { label: "Sponsorship", href: "/sponsorship", icon: Award, subItems: undefined },
+  { label: "People", href: "/people", icon: Users, subItems: undefined },
+  { label: "Recruitment", href: "/recruitment", icon: UserPlus, subItems: undefined },
+  { label: "Requests", href: "/requests", icon: InboxIcon, subItems: undefined },
+  { label: "Leave", href: "/leave", icon: CalendarDays, subItems: undefined },
+  { label: "Attendance", href: "/attendance", icon: Clock, subItems: undefined },
+  { label: "Settings", href: "/settings", icon: Settings, subItems: undefined },
 ];
 
 const internalNav = [
-  { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Dashboard", href: "/", icon: LayoutDashboard, subItems: undefined },
   { label: "Organisation", href: "/organisation", icon: Building2, subItems: [
     { label: "Organisation Profile", href: "/organisation/profile" },
     { label: "Legal Entities", href: "/organisation/legal-entities" },
     { label: "Group Structure", href: "/organisation/group-structure" },
   ]},
-  { label: "Sponsorship", href: "/sponsorship", icon: Award },
-  { label: "People", href: "/people", icon: Users },
-  { label: "Recruitment", href: "/recruitment", icon: UserPlus },
-  { label: "Requests", href: "/requests", icon: InboxIcon },
-  { label: "Leave", href: "/leave", icon: CalendarDays },
-  { label: "Attendance", href: "/attendance", icon: Clock },
-  { label: "Settings", href: "/settings", icon: Settings },
-  { label: "Admin", href: "/admin", icon: ShieldCheck },
+  { label: "Sponsorship", href: "/sponsorship", icon: Award, subItems: undefined },
+  { label: "People", href: "/people", icon: Users, subItems: undefined },
+  { label: "Recruitment", href: "/recruitment", icon: UserPlus, subItems: undefined },
+  { label: "Requests", href: "/requests", icon: InboxIcon, subItems: undefined },
+  { label: "Leave", href: "/leave", icon: CalendarDays, subItems: undefined },
+  { label: "Attendance", href: "/attendance", icon: Clock, subItems: undefined },
+  { label: "Settings", href: "/settings", icon: Settings, subItems: undefined },
+  { label: "Admin", href: "/admin", icon: ShieldCheck, subItems: undefined },
 ];
 
 export function Sidebar() {
