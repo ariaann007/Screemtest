@@ -4,8 +4,8 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 import { 
-  Clock, MapPin, ListFilter, Search, Calendar,
-  CheckCircle2, AlertCircle, PlayCircle, StopCircle, 
+  Clock, MapPin, Search, Calendar,
+  PlayCircle, StopCircle, 
   ArrowLeftRight, Filter, ChevronRight
 } from "lucide-react";
 import {

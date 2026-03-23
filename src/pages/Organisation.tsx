@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/select";
 import { 
   Building2, Globe, MapPin, ShieldCheck, 
-  Users, Briefcase, Plus, ChevronRight, Save, X
+  Plus, ChevronRight, Save
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
