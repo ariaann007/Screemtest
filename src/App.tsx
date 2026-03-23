@@ -12,6 +12,7 @@ import RequestsPage from "@/pages/Requests";
 import RecruitmentPage from "@/pages/Recruitment";
 import SettingsPage from "@/pages/Settings";
 import AttendancePage from "@/pages/Attendance";
+import OrganisationPage from "@/pages/Organisation";
 import LeaveManagementPage from "@/pages/LeaveManagement";
 import AdminPage from "@/pages/Admin";
 import NotFound from "./pages/NotFound";
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/people" element={<PeoplePage />} />
               <Route path="/requests" element={<RequestsPage />} />
               <Route path="/attendance" element={<AttendancePage />} />
+              <Route path="/organisation/*" element={<OrganisationPage />} />
               <Route path="/recruitment" element={<RecruitmentPage />} />
               <Route path="/leave" element={<LeaveManagementPage />} />
               <Route path="/settings" element={<SettingsPage />} />

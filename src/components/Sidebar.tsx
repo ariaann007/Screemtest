@@ -8,6 +8,12 @@ import { useApp } from "@/context/AppContext";
 
 const clientNav = [
   { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Organisation", href: "/organisation", icon: Building2, subItems: [
+    { label: "Organisation Profile", href: "/organisation/profile" },
+    { label: "Legal Entities", href: "/organisation/legal-entities" },
+    { label: "Group Structure", href: "/organisation/group-structure" },
+    { label: "Sites & Branches", href: "/organisation/sites" },
+  ]},
   { label: "Sponsorship", href: "/sponsorship", icon: Award },
   { label: "People", href: "/people", icon: Users },
   { label: "Recruitment", href: "/recruitment", icon: UserPlus },
@@ -19,6 +25,11 @@ const clientNav = [
 
 const internalNav = [
   { label: "Dashboard", href: "/", icon: LayoutDashboard },
+  { label: "Organisation", href: "/organisation", icon: Building2, subItems: [
+    { label: "Organisation Profile", href: "/organisation/profile" },
+    { label: "Legal Entities", href: "/organisation/legal-entities" },
+    { label: "Group Structure", href: "/organisation/group-structure" },
+  ]},
   { label: "Sponsorship", href: "/sponsorship", icon: Award },
   { label: "People", href: "/people", icon: Users },
   { label: "Recruitment", href: "/recruitment", icon: UserPlus },
@@ -111,6 +122,26 @@ export function Sidebar() {
                     <span className="ml-auto text-[10px] bg-secondary/20 text-secondary rounded px-1">INT</span>
                   )}
                 </Link>
+                {/* Sub-items for Organisation */}
+                {item.subItems && active && (
+                  <ul className="mt-1 ml-9 space-y-1 border-l border-sidebar-border/30 pl-3">
+                    {item.subItems.map(sub => (
+                      <li key={sub.href}>
+                        <Link
+                          to={sub.href}
+                          className={cn(
+                            "block text-xs py-1.5 transition-colors",
+                            location.pathname === sub.href
+                              ? "text-sidebar-primary-foreground font-semibold"
+                              : "text-sidebar-foreground/60 hover:text-sidebar-foreground"
+                          )}
+                        >
+                          {sub.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             );
           })}
