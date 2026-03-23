@@ -7,13 +7,13 @@ import { AppProvider } from "@/context/AppContext";
 import { AppLayout } from "@/components/AppLayout";
 import DashboardPage from "@/pages/Dashboard";
 import SponsorshipPage from "@/pages/Sponsorship";
-
 import PeoplePage from "@/pages/People";
 import RequestsPage from "@/pages/Requests";
 import RecruitmentPage from "@/pages/Recruitment";
 import SettingsPage from "@/pages/Settings";
-import AdminPage from "@/pages/Admin";
+import AttendancePage from "@/pages/Attendance";
 import LeaveManagementPage from "@/pages/LeaveManagement";
+import AdminPage from "@/pages/Admin";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,9 +29,9 @@ const App = () => (
             <Route element={<AppLayout />}>
               <Route path="/" element={<DashboardPage />} />
               <Route path="/sponsorship" element={<SponsorshipPage />} />
-
               <Route path="/people" element={<PeoplePage />} />
               <Route path="/requests" element={<RequestsPage />} />
+              <Route path="/attendance" element={<AttendancePage />} />
               <Route path="/recruitment" element={<RecruitmentPage />} />
               <Route path="/leave" element={<LeaveManagementPage />} />
               <Route path="/settings" element={<SettingsPage />} />
